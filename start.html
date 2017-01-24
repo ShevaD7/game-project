@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>My Game Demo</title>
+        <link href="styles/styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+    <div id="loginAndRulesWindow">
+        <div id="loginAndRulesWindow-content">
+            <p>ENTER YOUR NAME</p>
+            <input type="text" id="login">
+            <p align="left">Welcome to Cube Madness game! Here are some rules:
+                <br> * Your time is limited. You have only 30 sec... 
+                <br> * You can click on cubes, and they will change their faces as well as colors
+                <br> * Every color affects cubes around in diferent ways depending on color, so that they change their faces as well as colors
+                <br> * If the new color of the CLICKED cube is the same as the colors from the left and right or from the top and bottom, three cubes will disappear and you will earn 3 secs.
+                <br> * The ++Score color means that cube faces of such color increase your score points 
+                <br> * The --Score color means that cube faces of such color decrease your score points 
+                <br> * SCORE AS MUCH POINTS AS YOU CAN! HAVE FUN!
+            </p>
+            <div id="submit">SUBMIT</div>
+        </div>
+    </div>
+    
+    <div id="scoreWindow">
+        <div id="scoreWindow-content">
+            <a id="stats">YOUR SCORE</a> 
+            <a id="border"></a> 
+            <a id="stats">BEST RESULT</a> 
+            <a id="bestRes"></a>
+        </div>
+    </div>
+
+    <div class="parent">
+        <div id="topPanel">TIME:</div>
+        <div class="row">
+            <div id="start">START</div>
+            <div id="reset">RESET</div>
+            <div id="score">SCORE:</div>
+            <div id="scoreAdd1">++SCORE</div>
+            <div id="scoreAdd2">--SCORE</div>
+        </div>
+
+        <canvas id="mainCanvas" width="650" height="650"></canvas>
+    </div>
+            
+
+    <script src="scripts/require.js" data-main="scripts/main"></script>
+    
+    </body>
+
+</html>
